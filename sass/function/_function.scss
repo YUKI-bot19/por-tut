@@ -1,0 +1,7 @@
+
+@use "../setting/setting";
+
+@function vw($width, $px) {
+
+  @return $px / $width * 100vw;
+}

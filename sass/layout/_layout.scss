@@ -1,0 +1,65 @@
+@use "../setting/setting";
+@use "../function/mixin";
+@use "../function/function";
+@use "../foundation/animation";
+
+.l-wrapper {
+  border: 3px solid setting.$color-base;
+  background: linear-gradient(
+    to bottom,
+    setting.$header-background 70%,
+    setting.$header-gradation
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // width: 100%;
+  // height: 100%;
+  font-size: 25px;
+  color: setting.$header-text;
+  font-family: setting.$font-family-title;
+  letter-spacing: 0.15em;
+  @include mixin.media(pc) {
+    font-size: function.vw(1920, 25);
+  }
+  @include mixin.media(tab) {
+    //  font-size: function.vw(1920, 25);
+    // font-size: 20px;
+    border: 10px solid setting.$color-base;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 0;
+  }
+}
+
+// .l-container {
+//   margin: 0 auto;
+//   background: red;
+//   width: setting.$layout-width-container;
+// }
+
+// .l-inner {
+// 	margin: 0 auto;
+// 	padding: 0 $pd-x-sp;
+// 	width: $layout-width-container;
+// 	max-width: 100%;
+// 	height: inherit;
+
+.l-image {
+  width: 100%;
+  transition: transform 0.5s ease;
+  // &::before {
+  //   @include mixin.animation (
+  //     $name: active-cover,
+  //     $duration: 1.6s,
+  //     $timing-function: ease-in-out
+  //   );
+  // }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// @include animation.active-cover {
+
+// }
