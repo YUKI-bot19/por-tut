@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
 </head>
 
 <body>
@@ -219,11 +220,13 @@
       <h2 class="c-heading__title">CONTACT</h2>
       <div class="p-contact__wrapper">
         <div class="p-contact__contents">
-          <form name="contact" method="POST" data-netlify="true">
+          
+          
+          <form name="contact" method="POST">
+            <div class="g-recaptcha" data-netlify="true"></div>
             <div class="c-contact__item">
               <label for="name-link" class="c-contact__name">NAME</label>
-              <input type="text" name="yourName"
-                 required />
+              <input type="text" name="yourName" required />
             </div>
 
             <div class="c-contact__item">
@@ -286,6 +289,7 @@
     </div>
 
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 
