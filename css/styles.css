@@ -285,9 +285,13 @@ textarea#message {
   text-align: center;
 }
 
+.c-rabbit {
+  width: 450px;
+}
+
 .c-about__text-block {
   flex: 1 0 50%;
-  margin: auto;
+  margin-top: 40px;
   font-size: 16px;
 }
 
@@ -1179,10 +1183,10 @@ input[type=email] {
     text-align: center;
   }
   .c-rabbit {
-    width: 28.4895833333vw;
-    margin-right: 3.125vw;
+    width: 23.4375vw;
   }
   .c-about__text-block {
+    margin-top: 2.0833333333vw;
     font-size: 0.8333333333vw;
   }
   .c-skill__graph {
