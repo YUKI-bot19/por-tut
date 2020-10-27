@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+/* --------------------------------
+* common part
+* -------------------------------- */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* --------------------------------
+* Header
+* -------------------------------- */
+
+.background-image {
+  background: #f2f3f7 url("../images/component.png") center -170px no-repeat;
+  overflow: hidden;
+  height: 800px;
+}
+
+.header {
+  margin: 59px auto;
+  height: 77px;
+  background: #fff;
+  -webkit-box-shadow: 4px 4px 1px #00000029;
+  box-shadow: 4px 4px 1px #00000029;
+  width: 975px;
+}
+
+.header-nav {
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.nav {
+  width: 610px;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main-nav .menu:not(:first-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  width: 1px;
+  height: 8px;
+  background: #000;
+}
+
+.menu {
+  position: relative;
+}
+
+.label {
+  text-align: center;
+}
+
+.label-title {
+  font-size: 1.4rem;
+  color: #000;
+  letter-spacing: 0.03em;
+}
+
+.sub-style::after {
+  display: block;
+  font-size: 1rem;
+  color: #777;
+}
+
+.sub-title1::after {
+  content: "企業情報";
+  text-indent: -0.3em;
+}
+
+.sub-title2::after {
+  content: "ニュース";
+}
+
+.sub-title3::after {
+  content: "サービス&製品情報";
+}
+
+.sub-title4::after {
+  content: "お問い合わせ";
+}
+
+.header-scroll {
+  position: relative;
+  color: #e00052;
+}
+
+.scroll {
+  position: absolute;
+  left: 49%;
+  bottom: 37px;
+  font-size: 1.2rem;
+}
+
+.scroll::before {
+  content: "";
+  position: absolute;
+  top: 150%;
+  left: 45%;
+  width: 3px;
+  height: 55px;
+  background-image: -o-linear-gradient(
+    top,
+    #e00052,
+    #e00052 3px,
+    transparent 3px
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #e00052,
+    #e00052 3px,
+    transparent 3px
+  );
+  background-size: 3px 10px;
+  background-position: top;
+  background-repeat: repeat-y;
+}
+
+/* --------------------------------
+* Main
+* -------------------------------- */
+
+/*------- 
+About ----------------------------------------- */
+
+.about-section {
+  padding: 103px 0 137px;
+}
+
+.title-pickup {
+  margin-left: 25px;
+  font-size: 4.3rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.title-pickup::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/surprised.svg");
+  width: 9px;
+  height: 61px;
+  margin-left: -25px;
+  position: absolute;
+  top: 18px;
+}
+
+.about {
+  max-width: 950px;
+  margin: -26px 0 0 20px;
+  padding: 66px 55px 63px 66px;
+  background-color: #f2f3f7;
+}
+
+.text {
+  font-size: 1.7rem;
+  color: #333;
+  line-height: 2.5;
+  letter-spacing: 0.02em;
+}
+
+.btn-link {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  width: 157px;
+  height: 36px;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 9px 13px 0 0;
+  margin: -18px auto;
+  color: #fff;
+  background: #d4004e;
+}
+
+.btn-link::after {
+  content: "";
+  position: absolute;
+  top: 35%;
+  right: 12px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*------- 
+Service & Product ----------------------------------------- */
+
+.service-section {
+  padding-bottom: 74px;
+}
+
+.service-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 74px;
+}
+
+.service-category:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.service-more {
+  width: calc(50% - 95px);
+  padding-top: 22px;
+}
+
+.service-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d4004e;
+  letter-spacing: 0.05em;
+}
+
+.service-text {
+  padding: 40px 57px 0 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 2.5;
+  letter-spacing: 0.07em;
+}
+
+.btn-link-r {
+  margin: 40px 0px 0px 110px;
+}
+
+.btn-link-l {
+  margin: 40px 0px 0px 90px;
+}
+
+.service-phote {
+  width: 50%;
+}
+
+/*------- 
+NEWS ----------------------------------------- */
+
+.news-section {
+  padding-bottom: 49px;
+}
+
+.news-nav {
+  margin: -23px 0 0 20px;
+}
+
+.news-list {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  background-color: #f2f3f7;
+  margin-bottom: 12px;
+  height: 86px;
+}
+
+.news-list a {
+  display: block;
+  color: #333;
+  padding: 26px 30px 34px 19px;
+}
+
+.news-title {
+  display: inline-block;
+  width: 159px;
+  padding: 4px 0;
+  text-align: center;
+  color: #e5a31c;
+  border: 1px solid#E5A31C;
+  font-size: 1.2rem;
+}
+
+.news-title2 {
+  color: #d4004e;
+  border: 1px solid#D4004E;
+}
+
+.news-title3 {
+  color: #5fa153;
+  border: 1px solid#5FA153;
+}
+
+.news-title4 {
+  color: #50bbf4;
+  border: 1px solid#50BBF4;
+}
+
+.date {
+  font-size: 1.3rem;
+  padding-left: 23px;
+}
+
+.news-text {
+  position: relative;
+  display: inline-block;
+  font-size: 1.3rem;
+  letter-spacing: 0.01em;
+  border-left: 2px solid #707070;
+  padding: 1px 45px 1px 28px;
+  margin-left: 23px;
+}
+
+.news-text::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #707070;
+  border-top: 2px solid #707070;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* --------------------------------
+* footer
+* -------------------------------- */
+
+.footer {
+  margin-top: 97px;
+  padding: 32px 0 28px 0;
+  color: #fff;
+  text-align: center;
+  background-color: #333;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 27px;
+}
+
+.footer-list {
+  padding: 0 34px;
+  line-height: 1;
+}
+
+.footer-list:not(:first-child) {
+  border-left: 2px solid #fff;
+}
+
+.sns-group a {
+  margin: 10px;
+}
+
+.sns {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding-bottom: 18px;
+}
+
+.btn-link-f {
+  padding-right: 15px;
+  color: #333;
+  background-color: #fff;
+  margin: 18px auto 30px;
+}
+
+.btn-link-f::after {
+  content: "";
+  position: absolute;
+  color: #333;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #333;
+  border-top: 2px solid #333;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
