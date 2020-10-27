@@ -497,7 +497,8 @@ textarea {
 }
 
 .c-submit-area {
-  text-align: right;
+  position: relative;
+  text-align: center;
 }
 
 .c-submit__hover {
@@ -669,6 +670,12 @@ textarea {
   padding: 42px 90px;
   font-size: 16px;
   letter-spacing: 0.08em;
+}
+
+.g-recaptcha {
+  width: 304px;
+  height: 78px;
+  margin: 0 auto;
 }
 
 .u-visuallyHidden {
