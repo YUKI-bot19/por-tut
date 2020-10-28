@@ -808,7 +808,7 @@ textarea {
   }
   .c-about__text-block {
     order: 1;
-    font-size: 0.8333333333vw;
+    font-size: 10px;
   }
   .c-about__text {
     padding-bottom: 35px;
